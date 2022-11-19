@@ -11,7 +11,8 @@ export default function SplashScreen() {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Lottie source={require('../assests/splash.json')} autoPlay loop={false}
-                onAnimationFinish={navigation.navigate("Home")} />
+                
+                onAnimationFinish={() => navigation.navigate("Login")} />
         </View>
     );
 }

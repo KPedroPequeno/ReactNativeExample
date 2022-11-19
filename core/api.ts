@@ -28,9 +28,9 @@ export default class Api {
 
     }
 
-    static async postResult<T>(url: string, obj: any): Promise<IKResult<T>> {
+    static async postResult(url: string, obj: any): Promise<any> {
 
-        let result = {} as IKResult<T>
+        let result = {} as any
 
         await axios.post(url, obj).then((r) => {
 

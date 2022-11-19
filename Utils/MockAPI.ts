@@ -21,6 +21,13 @@ export default class MockAPI{
                   ],
                 }
               })
+
+              this.post("/api/login", () => {
+                return {
+                  succeeded: true
+                }
+              })
+
             },
           })
     }
